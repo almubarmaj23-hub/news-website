@@ -920,3 +920,62 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .footer-grid { grid-template-columns: 1fr; }
   .modal-box { padding: 20px 16px 18px; }
 }
+
+/* ===== SKELETON LOADER ===== */
+.skeleton-card {
+  background: var(--bg2);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 14px 35px rgba(15,23,42,0.08);
+  border: 1px solid rgba(226,232,240,0.9);
+}
+.skeleton-img {
+  width: 100%; height: 185px;
+  background: var(--bg3);
+}
+.skeleton-body { padding: 14px; }
+.sk-line {
+  border-radius: 6px;
+  background: var(--bg3);
+  display: block;
+}
+.sk-pulse { animation: skPulse 1.4s ease-in-out infinite; }
+@keyframes skPulse {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.45; }
+}
+
+/* ===== READ MORE BUTTON in Modal ===== */
+.read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 18px;
+  padding: 10px 22px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: var(--transition);
+}
+.read-more-btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
+
+/* ===== NO RESULTS ===== */
+.no-results {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--text3);
+  font-size: 1.1rem;
+}
+.no-results i { margin-left: 8px; font-size: 1.4rem; }
+
+/* ===== CARD SOURCE LABEL ===== */
+.card-source {
+  font-size: 0.72rem;
+  color: var(--text3);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
